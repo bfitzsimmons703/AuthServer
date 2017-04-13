@@ -13,7 +13,7 @@ app.use(bodyParser.json({type: '*/*'})); //parses incoming requests into JSON, n
 router(app);
 
 //Connect Mongoose to MongoDB
-const MONGO_URL = 'mongodb://bfitzsimmons:bfitzsimmons@ds161210.mlab.com:61210/react_redux_auth';
+const MONGO_URL = 'mongodb://USER:PASSWORD@ds161210.mlab.com:61210/react_redux_auth';
 mongoose.connect(MONGO_URL);
 mongoose.connection
     .once('open', () => console.log('MongoLab is up Lord Commander.'))
